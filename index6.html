@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+      <a href="index5.html">index 3</a>
+        <a href="index7.html">index 3</a>
+        <div class="contenido">
+            <h1>🔍 Buscador Global del Sitio</h1>
+            
+            <div class="buscador-container">
+                <div class="input-busqueda">
+                    <input type="text" id="buscadorInput" placeholder="Buscar en todas las páginas...">
+                    <button onclick="realizarBusqueda()" class="btn-buscar">🔍 Buscar</button>
+                </div>
+                
+                <div class="filtros">
+                    <label><input type="checkbox" id="buscarTitulos" checked> Títulos</label>
+                    <label><input type="checkbox" id="buscarContenido" checked> Contenido</label>
+                    <label><input type="checkbox" id="resaltarResultados" checked> Resaltar</label>
+                </div>
+            </div>
+
+            <div id="resultadosBusqueda" class="resultados-container">
+                <div class="sin-resultados">
+                    <p>🔎 Ingresa un término de búsqueda para encontrar contenido en el sitio</p>
+                    <small>Este buscador indexa contenido de todas las 8 páginas del sitio</small>
+                </div>
+            </div>
+
+            <div class="indice-paginas">
+                <h3>📑 Contenido Indexado</h3>
+                <div class="paginas-grid" id="indicePaginas">
+                    <!-- Generado por JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script6.js"></script>
+</html>

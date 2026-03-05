@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+<div class="container">
+        <nav class="navegacion">
+           
+            <a href="index2.html" >2</a>
+            <a href="index3.html" >📅 3</a>
+            <a href="index4.html">4</a>
+           
+        </nav>
+
+        <div class="contenido">
+            <h1>📅 Calendario y Visualizador PDF</h1>
+            
+            <div class="seccion-calendario">
+                <h2>Seleccionar Fecha</h2>
+                <div class="input-fecha">
+                    <input type="date" id="fechaInput">
+                    <button onclick="mostrarFecha()" class="btn-fecha">Confirmar Fecha</button>
+                </div>
+                <div id="infoFecha" class="info-fecha">
+                    <p>Fecha seleccionada: <span id="fechaDisplay">Ninguna</span></p>
+                    <p>Día de la semana: <span id="diaSemana">-</span></p>
+                </div>
+            </div>
+
+            <div class="seccion-pdf">
+                <h2>📄 Cargar y Visualizar PDF</h2>
+                <div class="input-pdf">
+                    <input type="file" id="pdfInput" accept=".pdf">
+                    <button onclick="cargarPDF()" class="btn-pdf">Cargar PDF</button>
+                </div>
+                <div id="visorPDF" class="visor-pdf">
+                    <p class="mensaje-default">El PDF se mostrará aquí...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script3.js"></script>
+</html>
